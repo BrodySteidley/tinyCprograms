@@ -49,7 +49,7 @@ int hexToInt(char input[])
 int main(int argc, char *argv[])
 {
 
-    printf("Hex to decimal converter!!!!\n");
+    printf("Hex to decimal converter!!!\n");
     if (argc == 1)
     {
 	printf("Accepts arguments as hex numbers\n");
@@ -58,8 +58,7 @@ int main(int argc, char *argv[])
 
     
     for (int i = 1; i < argc; ++i)
-    {
-	printf("\n%s: %d", argv[i], hexToInt(argv[i]));
-    }
+	printf("%s: %d\n", argv[i], hexToInt(argv[i]));
+
     return 0;
 }
